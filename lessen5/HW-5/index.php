@@ -12,7 +12,7 @@ $products = mysqli_fetch_all($products, MYSQLI_ASSOC);
     <div class="main">
         <? foreach ($products as $product) { ?>
         <div class="card">
-            <a href="product.php">
+            <a href="product.php?product=<?php echo $product['title']?>">
                 <img src="img/<?=$product['img']?>" alt="<?=$product['rus_name']?>">
             </a>
             <div class="label"><?=$product['rus_name']?></div>

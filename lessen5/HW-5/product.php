@@ -2,6 +2,11 @@
 <?php
 
 require_once 'parts/header.php';
+if (isset($_GET['product'])) {
+    $currentProduct = $_GET['product'];
+    $product = mysqli_query($link, "SELECT * FROM products WHERE title='$currentProduct'");
+    $product = mysqli_fetch_all($product, MYSQLI_ASSOC);
+}
 ?>
 <div class="product-card">
     <a href="index.php">Вернуться на главную</a>
