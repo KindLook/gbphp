@@ -1,3 +1,9 @@
+<?php
+require_once '../bd/db.php';
+
+?>
+
+
 <!doctype html>
 <html lang="ru">
 <head>
