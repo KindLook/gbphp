@@ -1,5 +1,8 @@
 <?php
-require_once '../bd/db.php';
+    require_once 'db/db.php';
+
+    $result = mysqli_query($link, "SELECT * FROM cats");
+    $cats = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
 ?>
 
@@ -19,8 +22,9 @@ require_once '../bd/db.php';
 <nav>
     <ul>
         <li><a href="index.php">Главная</a></li>
-        <li><a href="#">Категория один</a></li>
-        <li><a href="#">Категория два</a></li>
+        <? foreach($cats as $cat) { ?>
+        <li><a href="#"><? echo $cat['rus_name']?></a></li>
+        <? } ?>
     </ul>
 </nav>
 <hr>
