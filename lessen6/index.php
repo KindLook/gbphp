@@ -1,38 +1,17 @@
 <?php
-//var_dump($_GET);
-var_dump($_POST);
 
-?>
+require_once  __DIR__ . '/config/lib.php';   //нам нужно вызвать только один раз поэтому require_once
+$pages = include __DIR__ . '/config/pages.php'; //в переменную положили  конфигурац файл(там номера страниц)
 
-<h1>Логин: <?= $_POST['user']['login']?></h1>
-<a href="?user[name]=Саша&user[login]=sasha">Саша</a>   
-<a href="?user[name]=Юля&user[login]=julia">Юля</a>
-<a href="?user[name]=Миша&user[login]=misha">Миша</a>
-<a href="?">Очистить</a>                                
-<br><br>
 
-<form method="post" >
-         <input type="hidden" name="_metod" value="PUT">
-        <input name="user[name]" placeholder="name" value="<?= $_POST['user']['login']?>">
-        <input name="user[login]" placeholder="login" value="<?= $_POST['user']['login']?>">
-        <input type="checkbox" name="test[]" value="1" <?= hasChecked(1)?>>
-        <input type="checkbox" name="test[]" value="2" <?= hasChecked(2)?>>
-        <input type="checkbox" name="test[]" value="3" <?= hasChecked(3)?>>
-        <input type="submit">
-</form>
+$pageName = getPage($pages);  //получили страницу и положили в переменную
 
-<?
-function hasChecked($id)
-{
-    if(empty($_POST['test'])){
-        return '';
-    }
+ob_start();                               //буферизация вызова
+include __DIR__ . '/pages/' . $pageName;
+$content = ob_get_clean();
 
-    if(in_array($id, $_POST['test'])){
-        return 'checked';
-    }
+$html = file_get_contents('main.html');   //в переменную кладем соединение с html файлом
+echo str_replace('{{content}}', $content, $html);  //заменяем в html на content из буфера и вставляем в html
 
-    return '';
 
-}
-?>
+
