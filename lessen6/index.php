@@ -12,22 +12,13 @@ var_dump($_POST);
 <br><br>
 
 <form method="post" >
-    <label>
+         <input type="hidden" name="_metod" value="PUT">
         <input name="user[name]" placeholder="name" value="<?= $_POST['user']['login']?>">
-    </label>
-    <label>
         <input name="user[login]" placeholder="login" value="<?= $_POST['user']['login']?>">
-    </label>
-    <label>
         <input type="checkbox" name="test[]" value="1" <?= hasChecked(1)?>>
-    </label>
-    <label>
         <input type="checkbox" name="test[]" value="2" <?= hasChecked(2)?>>
-    </label>
-    <label>
         <input type="checkbox" name="test[]" value="3" <?= hasChecked(3)?>>
-    </label>
-    <input type="submit">
+        <input type="submit">
 </form>
 
 <?
