@@ -1,12 +1,6 @@
 <?php
-$link = mysqli_connect('127.0.0.1', 'root', 'root', 'gbphp'); //подключение к базе данных
 
-// запрос к базе данных
-
-$res = mysqli_query($link, 'SELECT * FROM users');
-
-
-
+$res = mysqli_query($link, 'SELECT * FROM users WHERE id = ' . getId());
 
 $html = '<h1>Информация о пользователи</h1>';
 $row = mysqli_fetch_assoc($res);

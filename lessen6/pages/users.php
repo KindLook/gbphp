@@ -1,17 +1,11 @@
 <?php
-$link = mysqli_connect('127.0.0.1', 'root', 'root', 'gbphp'); //подключение к базе данных
 
-   // запрос к базе данных
+$res = mysqli_query($link, 'SELECT * FROM users');  //выборка всех users в массив
 
-$res = mysqli_query($link, 'SELECT * FROM users');
-
-
-
-
-$html = '<h1>Пользователи</h1>';
+$html = '<h1>Пользователи</h1>';        //на этой странице заголовок
 while ($row = mysqli_fetch_assoc($res)) {
     $html .= <<<php
-    <p>Login: <a href="?page=3&id={$row['id']}">{$row['login']}</p> <br>
+    Login: <a href="?page=3&id={$row['id']}">{$row['login']}</a> <br>
 php;
 }
 echo $html;
