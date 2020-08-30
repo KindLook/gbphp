@@ -26,7 +26,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a18ef1e-8f7a-456c-a206-9b1e4f2f7354" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/teory/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.php" beforeDir="false" afterPath="$PROJECT_DIR$/teory/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teory/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/teory/OLD/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +48,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="derby" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -56,6 +59,11 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="W:\domains\php\less7\teory\OLD" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -64,7 +72,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598432196829</updated>
-      <workItem from="1598432197911" duration="12060000" />
+      <workItem from="1598432197911" duration="13411000" />
     </task>
     <task id="LOCAL-00001" summary="создал ветку 7 урока">
       <created>1598432264621</created>
@@ -73,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598432264621</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="формы проверки БД пароли">
+      <created>1598783413325</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1598783413325</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,16 +119,21 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="создал ветку 7 урока" />
-    <option name="LAST_COMMIT_MESSAGE" value="создал ветку 7 урока" />
+    <MESSAGE value="формы проверки БД пароли" />
+    <option name="LAST_COMMIT_MESSAGE" value="формы проверки БД пароли" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="492" y="270" key="NewPhpFileDialog" timestamp="1598432348471">
+    <state x="275" y="14" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598783461596">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="492" y="270" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1598432348471" />
-    <state x="175" y="16" key="Vcs.Push.Dialog.v2" timestamp="1598432268939">
+    <state x="275" y="14" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1598783461596" />
+    <state x="492" y="270" key="NewPhpFileDialog" timestamp="1598783943549">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="175" y="16" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1598432268939" />
+    <state x="492" y="270" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1598783943549" />
+    <state x="175" y="16" key="Vcs.Push.Dialog.v2" timestamp="1598783416962">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="175" y="16" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1598783416962" />
   </component>
 </project>
